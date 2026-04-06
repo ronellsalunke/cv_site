@@ -58,7 +58,7 @@ a {
 /* ── Profile header ── */
 .profile {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
 }
 
@@ -73,6 +73,8 @@ a {
   place-items: center;
   flex-shrink: 0;
   background: linear-gradient(135deg, #222 0%, #4d4d4d 100%);
+  background-size: cover;
+  background-position: center;
 }
 
 .profile__text h1 {
@@ -202,6 +204,7 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+
 /* ── Feature card (writing) ── */
 .feature-card {
   margin-left: calc(var(--year-col) + var(--row-gap));
