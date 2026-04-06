@@ -1,181 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Rivera — Portfolio</title>
-    <meta name="description" content="Read.cv-style one-page portfolio." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="site">
-      <header class="profile" aria-label="Profile">
-        <div class="profile__media" aria-hidden="true">AR</div>
-        <div class="profile__text">
-          <h1>Alex Rivera</h1>
-          <p>Design in Bangalore</p>
-          <a href="https://alexrivera.design" target="_blank" rel="noreferrer">alexrivera.design</a>
-          <span class="pill">Available for projects</span>
-        </div>
-      </header>
 
-      <section class="block block--about" aria-label="About">
-        <h2>About</h2>
-        <p class="about">
-          I design product experiences with a focus on clarity, speed, and trust. I work closely
-          with product and engineering teams to simplify complex workflows into interfaces that feel
-          intuitive from first use.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rivera — Portfolio</title>
+  <meta name="description" content="Read.cv-style one-page portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <section class="block" aria-label="Work experiences">
-        <h2>Work Experience</h2>
-        <div class="row">
-          <p class="year">2022 — Now</p>
-          <div>
-            <a href="#" class="ext">Lead Product Designer at Northstar Labs</a>
-            <p class="meta">Bangalore, India</p>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2019 — 2022</p>
-          <div>
-            <a href="#" class="ext">Senior Designer at Orbit Commerce</a>
-            <p class="meta">Remote</p>
-          </div>
-        </div>
+<body>
+  <main class="site" id="app" style="display: none;">
+  </main>
+  
+  <script src="app.js"></script>
+</body>
 
-        <div class="card-row" aria-hidden="true">
-          <div class="shot shot--a"></div>
-          <div class="shot shot--b"></div>
-          <div class="shot shot--c"></div>
-        </div>
-
-        <div class="row">
-          <p class="year">2016 — 2019</p>
-          <div>
-            <a href="#" class="ext">UX Designer at Pixel Foundry</a>
-            <p class="meta">Mumbai, India</p>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2014 — 2016</p>
-          <div>
-            <a href="#" class="ext">Visual Designer at Form Studio</a>
-            <p class="meta">Pune, India</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" aria-label="Writing experiences">
-        <h2>Writing</h2>
-        <div class="row">
-          <p class="year">2025</p>
-          <div>
-            <a href="#" class="ext">Designing Trust in AI Interfaces</a>
-            <p class="meta">With product and research teams</p>
-          </div>
-        </div>
-
-        <a class="feature-card" href="#">
-          <div>
-            <p class="feature-card__title">This is a site title that can go…</p>
-            <p class="meta">1 min read</p>
-          </div>
-          <div class="feature-card__image" aria-hidden="true"></div>
-        </a>
-
-        <div class="row">
-          <p class="year">2024</p>
-          <div>
-            <a href="#" class="ext">Building Better Empty States</a>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2023</p>
-          <div>
-            <a href="#" class="ext">When Product Teams Over-Explain</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" aria-label="Speaking experiences">
-        <h2>Speaking</h2>
-        <div class="row">
-          <p class="year">2025</p>
-          <div>
-            <a href="#" class="ext">Designing for accessibility</a>
-            <p class="meta">Bangalore, India</p>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2024</p>
-          <div>
-            <a href="#" class="ext">How to make things super simple</a>
-            <p class="meta">Mumbai, India</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" aria-label="Side projects">
-        <h2>Side Projects</h2>
-        <div class="row">
-          <p class="year">2025</p>
-          <div>
-            <a href="#" class="ext">Framewise</a>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2024</p>
-          <div>
-            <a href="#" class="ext">Type Relay</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" aria-label="Education experiences">
-        <h2>Education</h2>
-        <div class="row">
-          <p class="year">2014 — 2016</p>
-          <div>
-            <a href="#">M.Des. in Interaction Design at Srishti Institute</a>
-            <p class="meta">Bangalore, India</p>
-          </div>
-        </div>
-        <div class="row">
-          <p class="year">2010 — 2014</p>
-          <div>
-            <a href="#">BFA in Visual Communication at MSU</a>
-            <p class="meta">Vadodara, India</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" aria-label="Contact">
-        <h2>Contact</h2>
-        <div class="row">
-          <p class="year">Email</p>
-          <div><a href="mailto:hello@alexrivera.design" class="ext">hello@alexrivera.design</a></div>
-        </div>
-        <div class="row">
-          <p class="year">LinkedIn</p>
-          <div><a href="#" class="ext">/in/alexrivera</a></div>
-        </div>
-        <div class="row">
-          <p class="year">X</p>
-          <div><a href="#" class="ext">@alexrivera</a></div>
-        </div>
-        <div class="row">
-          <p class="year">Behance</p>
-          <div><a href="#" class="ext">/alexrivera</a></div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
