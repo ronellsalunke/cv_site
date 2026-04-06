@@ -58,7 +58,7 @@ a {
 /* ── Profile header ── */
 .profile {
   display: flex;
-  align-items: inline-flex;
+  align-items: flex-start;
   gap: 16px;
 }
 
@@ -202,19 +202,6 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-
-.shot--a {
-  background: linear-gradient(145deg, #8f9477 0%, #6f6f52 45%, #cac6b7 100%);
-}
-
-.shot--b {
-  background: linear-gradient(145deg, #e3cb68 0%, #ed8448 40%, #4b95ac 100%);
-}
-
-.shot--c {
-  background: linear-gradient(145deg, #a2a2ad 0%, #ddd8d3 50%, #88735f 100%);
-}
-
 /* ── Feature card (writing) ── */
 .feature-card {
   margin-left: calc(var(--year-col) + var(--row-gap));
@@ -232,7 +219,7 @@ h2 {
   flex: 1 1 0;
   min-width: 0;
   border-right: 1px solid var(--border-soft);
-  background: radial-gradient(circle at 30% 30%, #a7d1ff 0%, #88a8ef 42%, #5569bf 100%);
+  background-color: var(--chip-bg);
   background-size: cover;
   background-position: center;
 }

@@ -1,160 +1,84 @@
 {
   "profile": {
-    "initials": "SL",
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&h=256&auto=format&fit=crop",
-    "name": "Sara Lawrence",
-    "description": "Design in San Francisco",
-    "website": "website.com",
-    "website_url": "https://website.com"
+    "initials": "YN",
+    "image": "",
+    "name": "Your Name",
+    "description": "Your role in Your City",
+    "website": "your-website.com",
+    "website_url": "https://your-website.com"
   },
-  "about": "I’m a passionate UX designer striving to create intuitive and engaging experiences. I’m a big believer that things can always be simpler than we think.",
+
+  "about": "Write a short bio about yourself. This section is optional — remove the \"about\" key to hide it.",
+
   "work": [
     {
-      "year": "2017 — Now",
-      "title": "Senior Designer at Magic Design Co",
-      "location": "San Francisco, CA",
-      "url": "https://figma.com/"
+      "year": "2022 — Now",
+      "title": "Role at Company",
+      "location": "City, Country",
+      "url": "https://example.com"
     },
     {
-      "year": "2015 — 2017",
-      "title": "Junior Designer at Creative Co",
-      "location": "Atlanta, GA",
-      "url": "https://figma.com/"
+      "year": "2019 — 2022",
+      "title": "Previous Role at Company",
+      "location": "City, Country",
+      "url": "https://example.com"
     },
     {
       "type": "images",
       "images": [
-        { "class": "shot--a", "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=256&auto=format&fit=crop" },
-        { "class": "shot--b", "url": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=256&auto=format&fit=crop" },
-        { "class": "shot--c", "url": "https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=256&auto=format&fit=crop" }
+        { "url": "" },
+        { "url": "" },
+        { "url": "" }
       ]
-    },
-    {
-      "year": "2014 — 2015",
-      "title": "Intern at Design Hub",
-      "location": "Atlanta, GA",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2012 — 2014",
-      "title": "Freelance Graphic Designer",
-      "location": "Remote",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2010 — 2012",
-      "title": "Art Assistant at Studio X",
-      "location": "Cincinnati, OH",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2008 — 2010",
-      "title": "Volunteer Designer at Nonprofit Y",
-      "location": "Cincinnati, OH",
-      "url": "https://figma.com/"
     }
   ],
+
   "writing": [
     {
-      "year": "2023",
-      "title": "Exploring the Intersection of Design and Technology",
-      "meta": "Collaboration with Mia, Leo, and Ava",
-      "url": "https://figma.com/"
+      "year": "2024",
+      "title": "Article Title",
+      "meta": "Co-authored with someone",
+      "url": "https://example.com"
     },
     {
       "type": "feature",
-      "title": "This is a site title that can go…",
-      "meta": "1 min read",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2023",
-      "title": "Understanding Design Hierarchies",
-      "meta": "Worked alongside Alex",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2020",
-      "title": "The Art of User-Centered Design",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2019",
-      "title": "Navigating Design Challenges",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2018",
-      "title": "Crafting Engaging User Experiences",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2018",
-      "title": "Building a Cohesive Design Language",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2017",
-      "title": "The Power of Visual Storytelling",
-      "url": "https://figma.com/"
+      "title": "Featured article title…",
+      "meta": "3 min read",
+      "image": "",
+      "url": "https://example.com"
     }
   ],
+
   "speaking": [
     {
       "year": "2024",
-      "title": "Designing for accessibility",
-      "location": "Los Angeles, CA",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2024",
-      "title": "How to make things super simple",
-      "location": "Miami, FL",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2023",
-      "title": "Designing your career",
-      "url": "https://figma.com/"
+      "title": "Talk Title",
+      "location": "City, Country",
+      "url": "https://example.com"
     }
   ],
+
   "projects": [
     {
-      "year": "2021",
-      "title": "Nature walks",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2020",
-      "title": "Plant-based cookware",
-      "url": "https://figma.com/"
-    },
-    {
-      "year": "2019",
-      "title": "Interactive art installation",
-      "url": "https://figma.com/"
+      "year": "2023",
+      "title": "Project Name",
+      "url": "https://example.com"
     }
   ],
+
   "education": [
     {
-      "year": "2010 — 2010",
-      "title": "Master's in Interaction Design at Georgia Tech",
-      "location": "Atlanta, GA",
-      "url": "https://hcii.cmu.edu/"
-    },
-    {
-      "year": "2006 — 2010",
-      "title": "Bachelor's in Communication Design at University of Cincinnati",
-      "location": "Cincinnati, OH",
-      "url": "https://figma.com/"
+      "year": "2014 — 2018",
+      "title": "Degree at University",
+      "location": "City, Country",
+      "url": "https://example.com"
     }
   ],
+
   "contact": [
-    { "label": "Threads", "text": "username", "url": "https://figma.com/" },
-    { "label": "Figma", "text": "username", "url": "https://figma.com/" },
-    { "label": "Instagram", "text": "username", "url": "https://figma.com/" },
-    { "label": "Bluesky", "text": "username", "url": "https://figma.com/" },
-    { "label": "Mastodon", "text": "username", "url": "https://figma.com/" },
-    { "label": "X", "text": "username", "url": "https://figma.com/" }
+    { "label": "Email", "text": "hello@example.com", "url": "mailto:hello@example.com" },
+    { "label": "GitHub", "text": "username", "url": "https://github.com/username" },
+    { "label": "LinkedIn", "text": "/in/username", "url": "https://linkedin.com/in/username" },
+    { "label": "X", "text": "@username", "url": "https://x.com/username" }
   ]
 }
