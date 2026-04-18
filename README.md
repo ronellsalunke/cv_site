@@ -1,17 +1,20 @@
 # cv_site
 
-A lightweight, read.cv-style portfolio site. No build tools, no frameworks — just edit `data.json` and deploy.
+A lightweight, read.cv-style portfolio site. Content lives in `data.json`
 
 ## Quick Start
 
-1. **Edit `data.json`** with your info (name, bio, work history, contact links, etc.)
-2. **Add a profile photo** — set `profile.image` to a path (`"photo.jpg"`) or URL
-3. **Preview locally** — you need a local server since the page fetches `data.json`:
+1. **Install Bun** (`https://bun.sh`)
+2. **Edit `data.json`** with your info (name, bio, work history, contact links, etc.)
+3. **Build static output**:
+   ```bash
+   bun run build
    ```
-   python -m http.server
+4. **Preview `dist/` locally**:
+   ```bash
+   bun dev
    ```
-   Then open `http://localhost:8000`
-4. **Deploy** — push to GitHub Pages, Netlify, Vercel, or any static host
+5. **Deploy `dist/`** to GitHub Pages, Netlify, Vercel, or any static host
 
 ## `data.json` Schema
 
@@ -19,17 +22,17 @@ A lightweight, read.cv-style portfolio site. No build tools, no frameworks — j
 |---|---|---|---|
 | `profile.name` | string | ✅ | Your full name |
 | `profile.description` | string | ✅ | Role + location (e.g. "Design in SF") |
-| `profile.initials` | string | — | Fallback if no image is set |
-| `profile.image` | string | — | URL or local path to profile photo |
-| `profile.website` | string | — | Display text for website pill |
-| `profile.website_url` | string | — | Link for the website pill |
-| `about` | string | — | Short bio paragraph |
-| `work` | array | — | Work experience entries |
-| `writing` | array | — | Writing/articles entries |
-| `speaking` | array | — | Speaking engagements |
-| `projects` | array | — | Side projects |
-| `education` | array | — | Education entries |
-| `contact` | array | — | Contact/social links |
+| `profile.initials` | string | - | Fallback if no image is set |
+| `profile.image` | string | - | URL or local path to profile photo |
+| `profile.website` | string | - | Display text for website pill |
+| `profile.website_url` | string | - | Link for the website pill |
+| `about` | string | - | Short bio paragraph |
+| `work` | array | - | Work experience entries |
+| `writing` | array | - | Writing/articles entries |
+| `speaking` | array | - | Speaking engagements |
+| `projects` | array | - | Side projects |
+| `education` | array | - | Education entries |
+| `contact` | array | - | Contact/social links |
 
 ### Standard entry (work, speaking, projects, education)
 
@@ -77,17 +80,18 @@ Insert between work entries to show portfolio shots:
 
 ## Optional Sections
 
-Every section except `profile` is optional. To hide a section, simply remove its key from `data.json`. For example, to remove Speaking, delete the entire `"speaking": [...]` block.
+Every section except `profile` is optional. To hide a section, simply remove its key from `data.json`.
 
 ## Dark Mode
 
-Dark mode activates automatically based on the user's system preference via `@media (prefers-color-scheme: dark)`. No toggle needed — edit the CSS variables in `:root` and the `prefers-color-scheme` media query to customise colours.
+Dark mode activates automatically based on the user's system preference. No toggle needed - edit the CSS variables in `:root` customise colours.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `data.json` | All site content — the only file users need to edit |
-| `index.html` | Shell HTML (font imports + script tag) |
-| `app.js` | Reads `data.json` and renders the page |
-| `styles.css` | All styling including responsive + dark mode |
+| `data.json` | All site content - the only file users need to edit |
+| `build.ts` | Bun build script that pre-renders `dist/index.html` |
+| `dist/index.html` | Generated static HTML |
+| `styles.css` | Source stylesheet copied to `dist/styles.css` |
+| `dev.ts` | Bun static preview server for `dist/` |
