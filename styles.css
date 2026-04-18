@@ -1,25 +1,14 @@
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #555555;
+  color-scheme: light dark;
+  --bg: light-dark(#ffffff, #222222);
+  --text: light-dark(#111111, #e8e8e8);
+  --muted: light-dark(#555555, #a0a0a0);
   --muted-2: #888888;
-  --chip-bg: #f2f2f2;
-  --border: #e5e5e5;
-  --border-soft: #f2f2f2;
+  --chip-bg: light-dark(#f2f2f2, #1e1e1e);
+  --border: light-dark(#e5e5e5, #2a2a2a);
+  --border-soft: light-dark(#f2f2f2, #555555);
   --year-col: 120px;
   --row-gap: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #222222;
-    --text: #e8e8e8;
-    --muted: #a0a0a0;
-    --muted-2: #888888;
-    --chip-bg: #1e1e1e;
-    --border: #2a2a2a;
-    --border-soft: #555555;
-  }
 }
 
 * {
@@ -31,7 +20,6 @@ body {
   margin: 0;
   padding: 0;
   background: var(--bg);
-  color: var(--text);
 }
 
 body {
@@ -39,6 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-size: 14px;
+  color: var(--text);
 }
 
 a {
@@ -65,7 +54,7 @@ a {
 .profile__media {
   width: 88px;
   height: 88px;
-  border-radius: 100px;
+  border-radius: 50%;
   color: #fff;
   font-size: 22px;
   font-weight: 500;
@@ -128,7 +117,7 @@ a {
   gap: 14px;
 }
 
-h2 {
+.block h2 {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -201,8 +190,15 @@ h2 {
   height: 90px;
   border-radius: 8px;
   border: 1px solid var(--border);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+}
+
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* ── Feature card (writing) ── */
@@ -223,8 +219,15 @@ h2 {
   min-width: 0;
   border-right: 1px solid var(--border-soft);
   background-color: var(--chip-bg);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+}
+
+.feature-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .feature-card__text {
