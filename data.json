@@ -7,9 +7,7 @@
     "website": "your-website.com",
     "website_url": "https://your-website.com"
   },
-
-  "about": "Write a short bio about yourself. This section is optional — remove the \"about\" key to hide it.",
-
+  "about": "Write a short bio about yourself. This section is optional - remove the \"about\" key to hide it.",
   "work": [
     {
       "year": "2022 — Now",
@@ -26,13 +24,18 @@
     {
       "type": "images",
       "images": [
-        { "url": "" },
-        { "url": "" },
-        { "url": "" }
+        {
+          "url": ""
+        },
+        {
+          "url": ""
+        },
+        {
+          "url": ""
+        }
       ]
     }
   ],
-
   "writing": [
     {
       "year": "2024",
@@ -48,7 +51,6 @@
       "url": "https://example.com"
     }
   ],
-
   "speaking": [
     {
       "year": "2024",
@@ -57,7 +59,6 @@
       "url": "https://example.com"
     }
   ],
-
   "projects": [
     {
       "year": "2023",
@@ -65,7 +66,6 @@
       "url": "https://example.com"
     }
   ],
-
   "education": [
     {
       "year": "2014 — 2018",
@@ -74,11 +74,30 @@
       "url": "https://example.com"
     }
   ],
-
   "contact": [
-    { "label": "Email", "text": "hello@example.com", "url": "mailto:hello@example.com" },
-    { "label": "GitHub", "text": "username", "url": "https://github.com/username" },
-    { "label": "LinkedIn", "text": "/in/username", "url": "https://linkedin.com/in/username" },
-    { "label": "X", "text": "@username", "url": "https://x.com/username" }
+    {
+      "label": "Email",
+      "text": "hello@example.com",
+      "url": "mailto:hello@example.com",
+      "icon": "email"
+    },
+    {
+      "label": "GitHub",
+      "text": "username",
+      "url": "https://github.com/username",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "text": "/in/username",
+      "url": "https://linkedin.com/in/username",
+      "icon": "linkedin"
+    },
+    {
+      "label": "X",
+      "text": "@username",
+      "url": "https://x.com/username",
+      "icon": "x"
+    }
   ]
 }

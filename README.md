@@ -75,8 +75,20 @@ Insert between work entries to show portfolio shots:
 ### Contact entry
 
 ```json
-{ "label": "GitHub", "text": "username", "url": "https://github.com/username" }
+{ "label": "GitHub", "text": "username", "url": "https://github.com/username", "icon": "github" }
 ```
+
+`contact[].icon` is optional. Supported values: `resume`, `github`, `linkedin`, `email`, `telegram`, `blog`, `twitter`, `x`, `rss`, `website`.
+
+### Contact display mode
+
+You can switch between:
+- **Icon-based contact links** (default, shown below your name)
+- **Text-based contact section** (full rows like Email / GitHub / LinkedIn)
+
+To switch modes, edit [site-build.ts](/Users/ronell/Documents/Develop/web/cv_site/site-build.ts):
+- For icon mode, keep `renderSocialPills(data.contact)` in the profile header and keep the `text based contact section` block commented out.
+- For text mode, uncomment the `text based contact section` block and remove/disable `renderSocialPills(data.contact)` in the profile header.
 
 ## Optional Sections
 
